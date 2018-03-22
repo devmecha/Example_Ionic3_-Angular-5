@@ -9,5 +9,6 @@ Find Me Here :
 ----------------------------------------------------
 
 _Usage_
+-------
 This is a example App showing the basics of using Ionic 3 with Angular 5.
 	
