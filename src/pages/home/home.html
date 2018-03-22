@@ -1,0 +1,34 @@
+
+<ion-content>
+  <ion-slides pager (ionSlideDidChange)="slideChnaged()" (ionSlideDrag)="slideMoved()">
+    <ion-slide>
+      <div class="diag" style="background: url('assets/imgs/whitebg.svg') no-repeat">
+        <ion-icon ios="ios-analytics" md="md-analytics" color="primary" [@bounce]='state' (@bounce.done)="animationComp()"></ion-icon>
+      </div>
+      <div [@bounce]='state'>
+        <h2>Find who you are</h2>
+        <p>Your choices are important, you can monitor all with one toutch. </p>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="diag" style="background: url('assets/imgs/whitebg.svg') no-repeat">
+        <ion-icon ios="ios-trophy" md="md-trophy" color="primary" [@bounce]='state'></ion-icon>
+      </div>
+      <div [@bounce]='state'>
+        <h2>Set your goals</h2>
+        <p>Eyes on the prize! Set your goals from small to major. </p>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="diag" style="background: url('assets/imgs/whitebg.svg') no-repeat">
+        <ion-icon ios="ios-chatboxes" md="md-chatboxes" color="primary" [@bounce]='state'></ion-icon>
+      </div>
+      <div [@bounce]='state'>
+        <h2>Connect with others</h2>
+        <p>Learn by sharing your experience</p>
+      </div>
+    </ion-slide>
+    
+  </ion-slides>
+  <button (click)="skip()" id="skip"> {{skipMsg}} </button>
+</ion-content>
